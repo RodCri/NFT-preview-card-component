@@ -41,16 +41,33 @@ body{
   background-color: aliceblue;
   position: relative;
 }
-.card__figure img{
+.card__figure .figure{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }
-.view{
-  content: url('../images/icon-view.svg');
+.img__figure-icon{
   position: absolute;
-  left: 42%;
-  top: 40%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(178, 100%, 50%, 50%);
+  z-index: 999;
+  opacity: 0;
+  border-radius: 10px;
+}
+.img__figure-icon:hover{
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.25s linear;
+}
+.icon__view{
+  position: absolute;
+  width: 50px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .card__info{
   margin: 2rem 0;
